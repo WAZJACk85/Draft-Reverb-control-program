@@ -27,21 +27,22 @@ namespace Reverb_Control_App2
 
            
             
-           
-            var Reverb = 1;  
+            
+            var Reverb = 1;  //prev 1 * num1
             var decibel = 100;                      //prev 50    POSSIBLY SHOULD BE DECIBEL MAXIMUM.
             var decibelMargin = num1 / 10 * 6;                 // decibelMargin is the reduction in decibels when 1/1% reverb is added                         
 
 
             int newReverb = num1 * Reverb;     
-            int currentReverb = 0;
+            int startingReverb = 0;
+            int startingDecibel = 100;
 
 
             
             
 
-            Console.WriteLine("Current Reverb " + currentReverb + "%");
-
+            Console.WriteLine("Starting Reverb " + startingReverb + "%");
+            Console.WriteLine("Starting Decibel Level " + startingDecibel);
             int decibellimit = 30;    //prev 30
 
             //int decibelLow;
@@ -57,7 +58,7 @@ namespace Reverb_Control_App2
 
             int decibelLower = decibelLow; if (a is true);            
 
-            int newdecibel = decibelLower;     
+            int newdecibel = decibelLower;    
 
 
 
