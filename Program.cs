@@ -25,34 +25,44 @@ namespace Reverb_Control_App2
             string Reverbcontrol = Console.ReadLine();
             int num1 = Int32.Parse(Reverbcontrol);
 
-           // int num2 = Int32.Parse(50 / newReverb);
+           
             
-            var Reverb = 1 * num1;
+           
+            var Reverb = 1;  
             var decibel = 100;                      //prev 50    POSSIBLY SHOULD BE DECIBEL MAXIMUM.
-            var decibelMargin = -6;                 // decibelMargin is the reduction in decibels when 1/1% reverb is added                         
+            var decibelMargin = num1 / 10 * 6;                 // decibelMargin is the reduction in decibels when 1/1% reverb is added                         
 
 
-            int newReverb = num1 / Reverb;     // num1 / Reverb;
-
-            Console.WriteLine("Current Reverb " + newReverb + "%");
-
-            int decibellimit = 30;
-
-            bool a = newReverb > decibellimit;
+            int newReverb = num1 * Reverb;     
+            int currentReverb = 0;
 
 
-            int decibelLow;
+            
+            
 
-            decibelLow = (decibel - decibel - decibelMargin); //(decibel - decibel - decibelmargin)
+            Console.WriteLine("Current Reverb " + currentReverb + "%");
+
+            int decibellimit = 30;    //prev 30
+
+            //int decibelLow;
+
+            int decibelLow = decibel - decibelMargin; 
+
+            bool a = decibelLow > decibellimit;     
+
+
+            
+
+            
 
             int decibelLower = decibelLow; if (a is true);            
 
-            int newdecibel = decibel - decibelLower;
+            int newdecibel = decibelLower;     
 
 
 
             Console.WriteLine("New Decibel level is now " + newdecibel);
-            Console.WriteLine("New Reverb level is now " + newReverb);
+            Console.WriteLine("New Reverb level is now " + newReverb + "%");
 
             Console.ReadKey();
 
