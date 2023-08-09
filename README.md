@@ -2,7 +2,11 @@
 
 This Read me will display the updates to the main project,
 
-# Currently updating code, I have just pasted in latest Iteration, however this is only me looking at the code for about 10 minutes, I realised that I had , a) possibly lost some save updates, or b) intended to include an altered version. Anyway this is more up to date now, but next week will be a fully working console program. 09/08/23
+
+Recent changes 09/08/2023 :  Changed the code so that it better calculates sums.  Changed some of the text to show starting Reverb instead of 'current reverb'
+
+Next steps : Now the draft works, I am reading : Designing software synthesizer Plugins in C++, I am going to Develop a UI for this mock reverb control and then
+further UI's for  distortion and chorus pedal controls.
 
 
 
