@@ -2,7 +2,7 @@
 
 This Read me will display the updates to the main project,
 
-# Currently updating code, I have just pasted in latest Iteration, however this is only me looking at the code for about 10 minutes, I realised that I had , a) possibly lost some save updates, or b) intended to include an altered version. Anyway this is more up to date now, but next week will be a fully working console program.
+# Currently updating code, I have just pasted in latest Iteration, however this is only me looking at the code for about 10 minutes, I realised that I had , a) possibly lost some save updates, or b) intended to include an altered version. Anyway this is more up to date now, but next week will be a fully working console program. 09/08/23
 
 
 
